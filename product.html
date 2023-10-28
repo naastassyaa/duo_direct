@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400&family=Playfair+Display:wght@700&display=swap"
+            rel="stylesheet"
+    />
+    <script
+            src="https://kit.fontawesome.com/c7fbf1cc29.js"
+            crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/product.css"/>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <title>Your Website</title>
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="product.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+        <img class="img-logo" src="../duo-direct/images/logo.png" alt="circle"/>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="button-block">
+            <button class="button-header button-login" type="button">
+                Login
+            </button>
+            <button class="button-header button-register" type="button">
+                Register
+            </button>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="section_product1">
+        <div class="section-main-product">
+            <div class="section-product-text">
+                <p class="header-product-text">What is DuoDirect?</p>
+                <p class="main-product-text">
+                    DuoDirect is an innovative meeting management platform for IT companies. It is specially designed to
+                    facilitate the meeting planning process. Although the platform does not hold meetings itself, it
+                    ensures efficient meeting organization and facilitates collaboration before and after meetings.
+                </p>
+            </div>
+            <div class="section-product-image">
+                <img
+                        src="../duo-direct/images/stay_up_to_date.png"
+                        alt="A man with a camera in the mountain"
+                />
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <div class="row section-advantages-heading">
+            <p class="header2-product-text">The main advantages of the product</p>
+            <p class="header2-product-text">They will make your planning more convenient</p>
+        </div>
+        <div class="row section-advantages-row">
+            <div class="col-md-6 section-advantages">
+                <div class="section-advantages-card">
+                    <img src="images/time.png" alt="MeetingMaker App Features"
+                         class="img-fluid section-advantage-images">
+                    <h2 class="section-top4">Smart scheduling</h2>
+                    <p class="section-text4">
+                        DuoDirect offers an intelligent scheduling system that helps you determine the best time to
+                        meet.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 section-advantages">
+                <div class="section-advantages-card">
+                    <img src="images/list.png" alt="MeetingMaker App Features"
+                         class="img-fluid section-advantage-images">
+                    <h2 class="section-top4">Clear agenda</h2>
+                    <p class="section-text4">
+                        DuoDirect allows meeting organizers to set a clear agenda and describe the purpose of the
+                        meeting.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row section-advantages-row">
+            <div class="col-md-6 section-advantages ">
+                <div class="section-advantages-card">
+                    <img src="images/poshta.png" alt="MeetingMaker App Features"
+                         class="img-fluid section-advantage-images">
+                    <h2 class="section-top4">Invite and confirm participation</h2>
+                    <p class="section-text4">
+                        DuoDirect provides the ability to invite participants to a meeting and receive their
+                        confirmation of attendance.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 section-advantages col-md-6">
+                <div class="section-advantages-card">
+                    <img src="images/email.png" alt="MeetingMaker App Features"
+                         class="img-fluid section-advantage-images">
+                    <h2 class="section-top4">Calendar reminders and support</h2>
+                    <p class="section-text4">
+                        DuoDirect sends meeting reminders to all participants to ensure they are prepared in a timely
+                        manner.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-main">
+        <div class="footer-info">
+            <div class="footer-logo">
+                <img src="../duo-direct/images/logo.png" alt="Your Logo"/>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2020 Thousand Sunny. All rights reserved
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-social">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+</script>
+
+</body>
+</html>

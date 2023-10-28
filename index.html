@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400&family=Playfair+Display:wght@700&display=swap"
+            rel="stylesheet"
+    />
+    <script
+            src="https://kit.fontawesome.com/c7fbf1cc29.js"
+            crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/header.css"/>
+    <link rel="stylesheet" href="styles/footer.css"/>
+    <link rel="stylesheet" href="styles/animation.css"/>
+    <title>Your Website</title>
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="product.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+        </ul>
+        <img class="img-logo" src="../duo-direct/images/logo.png" alt="circle"/>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="button-block">
+            <button class="button-header button-login" type="button">
+                Login
+            </button>
+            <button class="button-header button-register" type="button">
+                Register
+            </button>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="section1">
+        <div class="section-text">
+            <p class="header-text">Don't have time for long and tedious meeting planning?</p>
+            <p class="main-text">
+                Try DuoDirect for easy schedule control
+            </p>
+            <button class="button-download">Sign-up</button>
+        </div>
+        <div class="section1-image">
+            <img
+                    src="images/basepicture.png"
+                    alt="A man with a suitcase and a phone in his hands on the background of a large phone"
+            />
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="section-main">
+            <div class="section2-text">
+                <p class="header2-text">Stay up to date</p>
+                <p class="main2-text">
+                    Control your schedule and stay up to date on upcoming events
+                </p>
+            </div>
+            <div class="section2-image">
+                <img
+                        src="images/stay_up_to_date.png"
+                        alt="A man with a camera in the mountain"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="section-main">
+            <div class="section2-text">
+                <p class="header2-text">Easy to use</p>
+                <p class="main2-text">
+                    Quickly select participants, time, date, duration, and urgency of the event
+                </p>
+            </div>
+            <div class="section2-image">
+                <img
+                        src="images/easy_to_use.png"
+                        alt="A man with a camera in the mountain"
+                />
+            </div>
+        </div>
+    </section>
+
+    <section class="section3">
+        <p class="header4-text">Optimize all types of meetings</p>
+        <div class="section3-trending-stories">
+            <div class="blog1">
+                <img src="images/1-to-1.png" alt="yogi"/>
+                <p class="image1-text">
+                    1-to-1
+                </p>
+                <p class="healing-text">
+                    Choose any number of people and communicate with each one individually
+                </p>
+            </div>
+            <div class="blog1">
+                <img src="images/teams.png" alt="food"/>
+                <p class="image1-text">
+                    Teams
+                </p>
+                <p class="healing-text">
+                    Create a separate room for your team and schedule meetings
+                </p>
+            </div>
+            <div class="blog1">
+                <img src="images/company.png" alt="building"/>
+                <p class="image1-text">
+                    Company
+                </p>
+                <p class="healing-text">
+                    You can communicate with any person or team from your company
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer-main">
+        <div class="footer-info">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Your Logo"/>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2020 Thousand Sunny. All rights reserved
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-social">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+</script>
+</body>
+</html>
+
